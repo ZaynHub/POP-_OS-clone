@@ -6,10 +6,10 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-image: url("artistic-blurry-colorful-wallpaper-background.jpg"); /* Path to your image */
-  background-repeat: no-repeat;            /* Prevents tiling */
-  background-size: cover;                  /* Scales image to cover full screen */
-  background-position: center;             /* Centers the image */
+  background-image: url("artistic-blurry-colorful-wallpaper-background.jpg"); 
+  background-repeat: no-repeat;            
+  background-size: cover;                 
+  background-position: center;            
 
 }
 
@@ -60,7 +60,7 @@ body {
   background: url(pop-hero-tablet-night.jpg);
   background-size: cover;
   height: 25rem;
-  padding: 5rem 10rem; /* <-- same margin for title and info */
+  padding: 5rem 10rem;
   text-align: left;
   display: flex;
   flex-direction: column;
