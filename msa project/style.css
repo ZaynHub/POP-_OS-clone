@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("artistic-blurry-colorful-wallpaper-background.jpg"); /* Path to your image */
+  background-repeat: no-repeat;            /* Prevents tiling */
+  background-size: cover;                  /* Scales image to cover full screen */
+  background-position: center;             /* Centers the image */
+
+}
+
+.main {
+  width: 100%;
+}
+
+/* Topbar */
+.topbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  padding: 1rem 1.8rem;
+  height: 60px;
+}
+
+.btn {
+  font-size: 0.8rem;
+  font-weight: bold;
+  background: none;
+  color: rgb(253, 249, 249);
+  border: none;
+}
+#go{
+    background: #7711b2;
+}
+
+.dropdown-menu {
+  min-width: 300px;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem;
+}
+
+.imglogo {
+  height: 6rem;
+  mix-blend-mode:lighten;
+}
+
+/* Hero Section */
+.hero {
+  background: url(pop-hero-tablet-night.jpg);
+  background-size: cover;
+  height: 25rem;
+  padding: 5rem 10rem; /* <-- same margin for title and info */
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.info {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  /* background-color: #06d6a0; */
+  padding: 0.8rem 1rem;
+  border-radius: 5px;
+  display: inline-block;
+  max-width: 40rem; 
+}
+.btndown{
+    /* background-color: #06d6a0; */
+    /* margin: 1rem; */
+    padding: 1rem;
+}
+#btn1 {
+  font-size: 1rem;
+  font-weight: lighter;
+  background: rgb(24, 138, 204);
+  color: rgb(12, 12, 12);
+  border: none;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  padding: 0.8rem 1.2rem;
+  transition: all 0.3s ease;
+}
+#btn1:hover {
+  background: linear-gradient(135deg, #1e90ff, #00c6ff);
+  color: white;
+  transform: scale(1.08);
+  box-shadow: 0 0 15px rgba(0, 198, 255, 0.8), 0 0 30px rgba(0, 198, 255, 0.5);
+}
+#btn2 {
+  font-size: 1rem;
+  font-weight: lighter;
+  background: rgb(204, 126, 24);
+  color: rgb(12, 12, 12);
+  border: none;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  padding: 0.8rem 1.2rem;
+  transition: all 0.3s ease;
+}
+#btn2:hover {
+  background: linear-gradient(135deg, #ff8c00, #ff4500);
+  color: white;
+  transform: rotate(-3deg) scale(1.08);
+  box-shadow: 0 0 15px rgba(255, 140, 0, 0.8), 0 0 30px rgba(255, 69, 0, 0.5);
+}
+.why {
+ background: url("artistic-blurry-colorful-wallpaper-background.jpg");
+ background-size: cover;
+  width: 100vw;      
+  margin-left: calc(-50vw + 50%); 
+  margin-bottom: 2rem; 
+  height: 3.5rem;
+  padding: 2.5rem 1rem 1rem 1rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: luminosity;
+}
+/* Features */
+.features .feature-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  margin-bottom: 5rem;
+}
+.features .feature-card:hover {
+  transform: translateY(-5px);
+}
+.row1, .row2, .row3 {
+  /* width: 100vw;       */
+  /* margin-left: calc(-50vw + 50%);  */
+  display: flex;              
+  justify-content: space-between;
+  align-items: center;       
+  margin-bottom: 15px;
+  padding: 15px;
+  gap: 20px;
+  /* background: linear-gradient(135deg, #9696bd, #0d05f280);                */
+}
+
+.Workflow, .Compatibility, .Security {
+  flex: 1;  
+  color: #fffcfc; 
+  text-align: left;               
+}
+
+.workflowimg, .compatibilityimg, .securityimg {
+  flex: 0 0 40%;        
+  max-width: 40%;
+}
+
+.img1, .img2, .img3 {
+  width: 100%;
+  border-radius: 8px;       
+  mix-blend-mode:normal;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+.img1:hover {
+  transform: scale(1.05) rotate(-2deg);
+   filter: grayscale(10%) brightness(1.2);
+  box-shadow: 0 10px 25px rgba(30, 144, 255, 0.6);
+}
+
+.img2:hover {
+  transform: scale(1.05) rotate(2deg);
+  filter: grayscale(10%) brightness(1.2);
+  box-shadow: 0 10px 25px rgba(34, 197, 94, 0.6);
+}
+
+.img3:hover {
+  transform: scale(1.08);
+  filter: grayscale(100%) sepia(50%) hue-rotate(200deg);
+  box-shadow: 0 0 25px rgba(255, 69, 0, 0.8);
+}
+
+
+@media (max-width: 768px) {
+  .row1, .row2, .row3 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .workflowimg, .compatibilityimg, .securityimg {
+    max-width: 100%;
+  }
+
+  .Workflow, .Compatibility, .Security {
+    text-align: center;
+  }
+}
+
+.feature-card {
+  background-color: #809533;
+}
+
+/* Download */
+.download {
+  background: url("artistic-blurry-colorful-wallpaper-background.jpg");
+  background-size:cover;
+  padding: 4rem 1rem;
+}
+#btn3{
+     font-size: 1rem;
+  font-weight: lighter;
+  background: rgb(164, 159, 239);
+  color: rgb(12, 12, 12);
+  border: none;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  padding: 0.8rem 1.2rem;
+  transition: all 0.3s ease;
+}
+#btn3:hover {
+  background: linear-gradient(135deg, #fe0808, #2413e0);
+  color: white;
+  transform: rotate(-3deg) scale(1.08);
+  box-shadow: 0 0 15px rgba(226, 67, 19, 0.8), 0 0 30px rgba(51, 0, 255, 0.5);
+}
+
+/* Footer */
+.footer {
+  /* background: url("artistic-blurry-colorful-wallpaper-background.jpg"); */
+   background-size:cover;
+  color: #fff;
+  font-size: 0.9rem;
+}
